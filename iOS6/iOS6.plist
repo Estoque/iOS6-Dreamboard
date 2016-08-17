@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- iOS6 Dreamboard for iOS7 by Estoque http://est0que.tistory.com/ -->
+<plist version="1.0">
+<dict>
+	<key>MainView</key>
+	<array>
+		<dict>
+			<key>alpha</key>
+			<real>1.0</real>
+			
+			<key>Frame</key>
+			<string>0,0,320,20</string>
+			
+			<key>Image</key>
+			<string>$ROOT/Images/status.png</string>
+			
+			<key>ViewType</key>
+			<string>ImageView</string>
+		</dict>		
+		<dict>
+			<key>Frame</key>
+			<string>0,390,320,90</string>
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+						<array>
+							<!-- <string>launch com.wynd.dreamboard</string> -->
+							<string>get.vars.grid = 0 ? vars.grid = 1 : vars.grid = 0</string>
+							<string>function update</string>
+						</array>
+					<key>Frame</key>	
+					<string>236,-2,76,89</string>
+					
+					<key>Image</key>
+					<string>$ROOT/Images/launcher.png</string>
+					
+					<key>ViewType</key>
+					<string>Button</string>
+				</dict>
+			
+				<dict>
+					<key>AllApps</key>
+					<false/>
+					
+					<key>ScrollingEnabled</key>
+					<false/>
+					
+					<key>Cols</key>
+					<integer>4</integer>
+					
+					<key>Rows</key>
+					<integer>1</integer>
+					
+					<key>GapX</key>
+					<integer>76</integer>
+					
+					<key>GapY</key>
+					<integer>81</integer>
+					
+					<key>Frame</key>
+					<string>16,0,320,90</string>
+					
+					<key>IconHeight</key>
+					<integer>85</integer>
+					
+					<key>IconWidth</key>
+					<integer>60</integer>
+					
+					<key>PageGapX</key>
+					<integer>0</integer>
+					
+					<key>PageGapY</key>
+					<integer>0</integer>
+					
+					<key>ViewType</key>
+					<string>AppGrid</string>
+					
+					<key>LabelStyle</key>
+					<dict>
+						<key>labelFontSize</key>
+						<integer>12</integer>
+						
+						<key>labelHeight</key>
+						<integer>13</integer>
+						
+						<key>labelWidth</key>
+						<integer>60</integer>
+						
+						<key>labelX</key>
+						<integer>0</integer>
+						
+						<key>labelY</key>
+						<integer>75</integer>
+						
+					</dict>
+					
+					<key>Apps</key>
+						<array>
+							<string>com.apple.mobilephone</string>
+							<string>com.apple.mobilemail</string>
+							<string>com.apple.mobilesafari</string>
+							
+						</array>
+				</dict>
+
+				<dict>
+					<key>alpha</key>
+					<real>1.0</real>
+				
+					<key>Frame</key>
+					<string>0,45,320,45</string>
+					
+					<key>Image</key>
+					<string>$ROOT/Images/dock.png</string>
+					
+					<key>ViewType</key>
+					<string>ImageView</string>
+				</dict>
+			</array>	
+		</dict>
+		<dict>
+			<key>Frame</key>
+			<string>0,480,320,480</string>
+			
+			<key>UserInteraction</key>
+			<true/>
+			
+			<key>ViewType</key>
+			<string>View</string>
+			
+			<key>id</key>
+			<string>grid</string>
+			
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+						<array>
+						<string>get.vars.grid = 0 ? vars.grid = 1 : vars.grid = 0</string>
+						<string>function update</string>
+						</array>
+					<key>AllApps</key>	
+					<true/>
+					
+					<key>ClipToBounds</key>
+					<true/>
+					
+					<key>Cols</key>
+					<integer>4</integer>
+					
+					<key>Rows</key>
+					<integer>4</integer>
+					
+					<key>Frame</key>
+					<string>16,20,320,370</string>
+					
+					<key>GapX</key>
+					<integer>76</integer>
+					
+					<key>GapY</key>
+					<integer>89</integer>
+					
+					<key>IconHeight</key>
+					<integer>85</integer>
+					
+					<key>IconWidth</key>
+					<integer>60</integer>
+					
+					<key>PageHeight</key>
+					<integer>340</integer>
+					
+					<key>ViewType</key>
+					<string>AppGrid</string>
+					
+					<key>LabelStyle</key>
+					<dict>
+						<key>labelFontSize</key>
+						<integer>12</integer>
+						
+						<key>labelHeight</key>
+						<integer>13</integer>
+						
+						<key>labelWidth</key>
+						<integer>60</integer>
+						
+						<key>labelX</key>
+						<integer>0</integer>
+						
+						<key>labelY</key>
+						<integer>75</integer>
+						
+					</dict>
+					
+					<key>id</key>
+					<string>realgrid</string>
+				</dict>
+				<dict>
+					<key>Frame</key>
+					<string>0,20,320,380</string>
+					
+					<key>Image</key>
+					<string>$ROOT/Images/launcherbg.png</string>
+					
+					<key>UserIntercation</key>
+					<false/>
+					
+					<key>ViewType</key>
+					<string>ImageView</string>
+				</dict>
+			</array>
+		</dict>		
+		<dict>	
+			<key>Actions</key>
+			<array>
+				<string>nothing</string>
+			</array>
+			
+			<key>Frame</key>
+			<string>0,0,320,480</string>
+			
+			<key>ContentHeight</key>
+			<integer>480</integer>
+			
+			<key>ContentWidth</key>
+			<integer>2560</integer>
+			
+			<key>ContentOffsetX</key>
+			<integer>0</integer>
+			
+			<key>ContentOffsetY</key>
+			<integer>0</integer>
+			
+			<key>HorizontalScrollBars</key>
+			<false/>
+			
+			<key>Paging</key>
+			<true/>
+			
+			<key>ViewType</key>
+			<string>ScrollView</string>
+			
+			<key>id</key>
+			<string>iOSscroll</string>
+			
+			<key>Subviews</key>
+			<array>
+				<dict>
+					<key>AllApps</key>
+					<false/>
+					
+					<key>ScrollingEnabled</key>
+					<false/>
+					
+					<key>Cols</key>
+					<integer>4</integer>
+					
+					<key>Rows</key>
+					<integer>4</integer>
+					
+					<key>Frame</key>
+					<string>16,22,2560,380</string>
+					
+					<key>GapX</key>
+					<integer>76</integer>
+					
+					<key>GapY</key>
+					<integer>89</integer>
+					
+					<key>IconHeight</key>
+					<integer>85</integer>
+					
+					<key>IconWidth</key>
+					<integer>60</integer>
+					
+					<key>PageGapX</key>
+					<integer>320</integer>
+					
+					<key>PageGapY</key>
+					<integer>0</integer>
+					
+					<key>ViewType</key>
+					<string>AppGrid</string>
+					
+					<key>LabelStyle</key>
+					<dict>
+						<key>labelFontSize</key>
+						<integer>12</integer>
+						
+						<key>labelHeight</key>
+						<integer>13</integer>
+						
+						<key>labelWidth</key>
+						<integer>60</integer>
+						
+						<key>labelX</key>
+						<integer>0</integer>
+						
+						<key>labelY</key>
+						<integer>75</integer>
+						
+					</dict>					
+					
+					<key>Apps</key>
+						<array>
+							<string>com.apple.Music</string>
+							<string>com.apple.AppStore</string>
+							<string>com.apple.calculator</string>
+							<string>com.apple.camera</string>
+							<string>com.apple.compass</string>
+							<string>com.apple.facetime</string>
+							<string>com.apple.gamecenter</string>
+							<string>com.apple.Maps</string>
+							<string>com.apple.MobileAddressBook</string>
+							<string>com.apple.mobilecal</string>
+							<string>com.apple.mobilenotes</string>
+							<string>com.apple.mobileslideshow</string>
+							<string>com.apple.MobileSMS</string>
+							<string>com.apple.MobileStore</string>
+							<string>com.apple.mobiletimer</string>
+							<string>com.apple.Passbook</string>
+							<string>com.apple.Preferences</string>
+							<string>com.apple.reminders</string>
+							<string>com.apple.stocks</string>
+							<string>com.apple.videos</string>
+							<string>com.apple.VoiceMemos</string>
+							<string>com.apple.weather</string>
+							<string>com.saurik.Cydia</string>
+							<string>com.saurik.WinterBoard</string>
+							<string>com.iwilab.KakaoTalk</string>
+							<string>com.wynd.dreamboard</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>
+							<string>NO ICON PLACEHOLDER</string>																																																														
+						</array>												
+				
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>alpha</key>
+			<real>1.0</real>
+			
+			<key>Frame</key>
+			<string>0,243,320,237</string>
+			
+			<key>Image</key>
+			<string>$ROOT/Images/bgmask.png</string>
+			
+			<key>ViewType</key>
+			<string>ImageView</string>
+		</dict>
+		<dict>
+			<key>alpha</key>
+			<real>1.0</real>
+			
+			<key>Frame</key>
+			<string>0,0,320,480</string>
+			
+			<key>Image</key>
+			<string>$ROOT/Images/bg.png</string>
+			
+			<key>ViewType</key>
+			<string>ImageView</string>
+			
+			<key>id</key>
+			<string>Wallpaper</string>
+		</dict>
+	</array>
+	<key>Functions</key>
+	<dict>
+		<key>update</key>
+		<array>
+
+			<dict>
+			<key>if</key><array><string>get.vars.grid = 1</string></array>
+			<key>then</key><array>
+				<string>views.realgrid.userInteraction = YES</string>
+				<string>views.grid.y = 0 animated:0.5</string>
+			</array>
+			<key>else</key><array>
+				<string>views.realgrid.userInteraction = NO</string>
+				<string>views.grid.y = 480 animated:0.5</string>
+			</array>
+			</dict>
+
+		</array>
+	</dict>
+	<key>Variables</key>
+	<dict>
+		<key>grid</key>
+		<integer>0</integer>
+		<key>editing</key><integer>0</integer>
+	</dict>
+	<key>Onload</key>
+	<array>
+		<string>vars.grid = 0</string>
+		<string>vars.editing = 0</string>
+		<string>function update</string>
+	</array>
+	<key>LabelStyle</key>
+	<dict>
+		<key>labelFontSize</key>
+		<integer>11</integer>
+		<key>labelHeight</key>
+		<integer>15</integer>
+		<key>labelWidth</key>
+		<integer>55</integer>
+		<key>labelX</key>
+		<integer>0</integer>
+		<key>labelY</key>
+		<integer>100</integer>
+	</dict>	
+</dict>
+</plist>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- iOS6 Dreamboard for iOS7 by Estoque http://est0que.tistory.com/ -->
+<plist version="1.0">
+<dict>
+<!-- 		테마컨텐츠 -->
+       <key>Plist</key>
+       <string>iOS6</string>
+<!--        설명 -->
+       <key>Description</key>
+       <string>iOS6 Dreamboard theme for iOS7 (basically) by Estoque http://est0que.tistory.com/</string>
+<!--        수정가능여부 -->
+       <key>NoneEditable</key>
+       <false/>
+</dict>
+</plist>
